@@ -13,7 +13,7 @@
     "prisma:generate": "./node_modules/.bin/prisma generate --schema ./app/prisma/schema.prisma",
     "install:dev":"yarn install && yarn prisma && yarn prisma:generate",
     "migrate": "yarn prisma db push --schema ./app/prisma/schema.prisma",
-    "deploy": "git add . && git commit -m Heroku && git push heroku master"
+    "deploy": "git add . && git commit -m Heroku && git push heroku main"
   },
   "devDependencies": {
     "@types/hapi__hapi": "^20.0.8",
