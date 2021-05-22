@@ -53,24 +53,6 @@ export default class CharacterController {
                 filteredPeople = people;
             }
 
-            //filtering
-            // people.forEach((person: any) => {
-            //     if (typeof parameter !== "undefined") {
-            //         if (person.name.includes(parameter) || person.gender.includes(parameter) || person.height.includes(parameter)) {
-            //             filteredPeople.push(person)
-            //         }
-            //     }
-            //     if (typeof gender !== "undefined") {
-            //         if (person.gender === gender) {
-            //             filteredPeople.push(person)
-            //         }
-            //     }
-
-            //     if (typeof gender === "undefined" && typeof parameter === "undefined") {
-            //         filteredPeople.push(person)
-            //     }
-            // });
-
             filteredPeople.forEach((people: any) => {
                 if (people.height != "unknown") {
                     totalHeight += Number(people.height);

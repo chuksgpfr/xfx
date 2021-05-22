@@ -28,19 +28,6 @@ export default class MovieController {
                 movies.push({title, opening_crawl, comment_count: comment.length});
             }
 
-            // data.results.forEach(async(movie:any) => {
-            //     const {title, opening_crawl, release_date, episode_id} = movie;
-            //     let comment = await prisma.comments.findMany({
-            //         where:{
-            //             movieId:{
-            //                 equals: episode_id
-            //             }
-            //         }
-            //     });
-                
-            //     movies.push({title, opening_crawl, release_date, comment_count: 1});
-            // });
-
             return h.response({ movies }).code(200);
 
         } catch (error) {
