@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+
+  provider = "mysql"
+
+  url = env("DATABASE")
+
+}
+
+model Comments {
+
+  id        Int      @id @default(autoincrement())
+
+  name     String   @db.VarChar(255) @default("anonymous")
+
+  createdAt DateTime @default(now()) @db.Timestamp(6)
+
+  comment   String  @db.LongText()
+
+  movieId  Int
+
+  ipAddress String
+
+}
