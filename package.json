@@ -7,7 +7,7 @@
     "start": "node build/index.js",
     "watch-node": "nodemon dist/index.js",
     "watch-ts": "tsc -w",
-    "postinstall": "tsc && npm run prisma:generate && npm run migrate",
+    "postinstall": "tsc && yarn prisma:generate && yarn migrate",
     "dev": "npm run postinstall && nodemon build/index.js",
     "prisma": "./node_modules/.bin/prisma",
     "prisma:generate": "./node_modules/.bin/prisma generate --schema ./app/prisma/schema.prisma",
