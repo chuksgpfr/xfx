@@ -6,7 +6,7 @@ datasource db {
 
   provider = "mysql"
 
-  url = env("DATABASE")
+  url = "mysql://b5f34adf977d90:cc3f1539@us-cdbr-east-03.cleardb.com/heroku_72d871908995ef0?reconnect=true"
 
 }
 
